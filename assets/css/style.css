@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
+/*----------------body styling---------------*/
 
-
-body{
+body {
   font-size: 20px;
   font-family: sans-serif;
-  background-color: #d3bbaf; 
-  color: #000;
+  background-color: #CDD1C4;
+  color: #FFF;
 
 }
 
@@ -23,17 +23,20 @@ img {
   color: #ccc;
 }
 */
+
+
 /*----------------CSS GRID------------------*/
 .container {
-    background-image: url("assets/images/civil-star-wars.png");
+background-image: url(/assets/images/MosEisley-SWBRS.jpg);
 }
 
 .game-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   grid-template-rows: 100px 1fr auto;
-  background-color: #ccc;
-    margin: 35px;
+  background-color: #30323D;
+  border-radius: 25px;
+  margin: 35px;
 }
 
 .title {
@@ -42,16 +45,12 @@ img {
   }
 
 .sidebar {
+  padding: 15px;
+  margin-top: 100px;
+  text-align: center;
   grid-column: 1;
   grid-row: 2 / span 2;
 }
-
-.sidebar img {
-    position: absolute;
-    width: 50%;
-    bottom: 0;
-    margin: 0;
-  }
 
 .game-area {
   grid-column: 2;
@@ -69,14 +68,21 @@ img {
   font-weight: 200;
 }
 
+.name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 .answers {
   margin-bottom: 20px;
 }
+
+/*----------------------button stlying..................*/
 #submit{
   font-family: sans-serif;
   font-size: 20px;
-  background-color: #297;
-  color: #fff;
+  background-color: #E8C547;
+  color: #30323D;
   border: 0px;
   border-radius: 3px;
   padding: 20px;
@@ -84,5 +90,6 @@ img {
   margin-bottom: 20px;
 }
 #submit:hover{
-  background-color: #3a8;
+  background-color: #4D5061;
+  color: #E8C547;
 }
